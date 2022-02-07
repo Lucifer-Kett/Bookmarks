@@ -1,6 +1,6 @@
-As a User
-I want to be able to see a list of bookmarks
-So that I know which links I have saved
+As a User\n
+I want to be able to see a list of bookmarks\n
+So that I know which links I have saved\n
 
 ![alt text](https://github.com/Luke-Collins/Bookmarks/blob/main/bookmarks_diagram.png)
 

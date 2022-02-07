@@ -2,7 +2,7 @@ As a User
 I want to be able to see a list of bookmarks
 So that I know which links I have saved
 
-<img scr="./bookmarks_diagram.jpg")
+<img scr="https://github.com/Luke-Collins/Bookmarks/blob/main/bookmarks_diagram.png")
 
 
 <!-- 

@@ -1,16 +1,20 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
+require './lib/bookmarks'
 
-class Bookmarks < Sinatra::Base
+class Bookmark < Sinatra::Base
   configure :development do
-    register Sinatra::Reloader 
+    register Sinatra::Reloader
   end
+
+  # enable :sessions
 
   get '/' do
     erb(:index)
   end
 
   get "/bookmarks" do
+    @bookmarks = Bookmarks.all
     erb(:bookmarks)
   end
 

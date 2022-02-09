@@ -5,11 +5,10 @@ I want to be able to see a list of bookmarks
 ![alt text](https://github.com/Luke-Collins/Bookmarks/blob/main/bookmarks_diagram.png)
 
 
-<!-- 
-As a User
-I want to be able to add and delete bookmarks
-So I can manage my list and change it with ease
+DATABASE SETUP
 
-As a User
-I want to be able to click my bookmarks
-So they take me to the page I wanted saved -->
+command CREATE DATABASE bookmark_manager;
+
+Connect to the database using the pqsl command \c bookmark_manager;
+
+Run the query we have saved in the file 01_create_bookmarks_table.sql

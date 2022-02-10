@@ -25,10 +25,12 @@ class Bookmark < Sinatra::Base
   end
 
   post "/bookmarks" do
-   p url = params[:url]
-    conn = PG.connect(dbname: 'bookmark_manager_test')
+    # url = params[:url]
+    Bookmarks.create(url = params[:url])
+    # conn = PG.connect(dbname: 'bookmark_manager_test')
 
-    conn.exec("INSERT INTO bookmarks (url) VALUES ('#{url}')")
+    # conn.exec("INSERT INTO bookmarks (url) VALUES ('#{url}')")
+    redirect "/bookmarks"
   end
 
   run! if app_file == $0
